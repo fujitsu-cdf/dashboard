@@ -81,7 +81,7 @@ import {
   isReadOnly,
   isWebSocketConnected
 } from '../../reducers';
-import messages from '../../nls/messages_en.json';
+import messages from '../../nls/messages.json';
 
 import '../../components/App/App.scss';
 
