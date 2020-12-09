@@ -19,7 +19,7 @@
     "lint:fix": "npm run lint -- --fix",
     "postinstall": "npm run bootstrap",
     "prepare": "lerna run prepare",
-    "start": "webpack-dev-server --hot --config webpack.dev.js",
+    "start": "webpack-dev-server --hot --host '0.0.0.0' --config webpack.dev.js",
     "start:watch": "concurrently -k -n \"webpack,bootstrap\" -c \"cyan,magenta\" npm:start npm:bootstrap:watch",
     "storybook": "start-storybook -p 5000",
     "storybook:build": "build-storybook",
