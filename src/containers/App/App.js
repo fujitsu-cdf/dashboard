@@ -145,6 +145,7 @@ export /* istanbul ignore next */ class App extends Component {
 
   componentDidMount() {
     this.fetchConfig();
+    this.loadMessages(this.props.lang);
   }
 
   componentDidUpdate(prevProps, prevState) {
@@ -190,6 +191,16 @@ export /* istanbul ignore next */ class App extends Component {
         showLoadingState: false
       });
     }
+  }
+
+  async loadMessages(lang) {
+    this.setState({ loadingConfig: true });
+    const path = `/src/nls/messages_${lang}.json`;
+    const message = await import(/* webpackIgnore: true */ path).then(
+      module => module.default
+    );
+
+    console.log(message); // inserted temporary
   }
 
   render() {
