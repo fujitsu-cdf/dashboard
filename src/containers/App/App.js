@@ -143,6 +143,16 @@ const initialState = {
 export /* istanbul ignore next */ class App extends Component {
   state = initialState;
 
+  constructor(props) {
+    super(props);
+    const path = `/src/nls/messages_ja.json`;
+    const ExtensionComponent = React.lazy(() =>
+      import(/* webpackIgnore: true */ path)
+    );
+
+    console.log(ExtensionComponent); // inserted temporary
+  }
+
   componentDidMount() {
     this.fetchConfig();
   }
