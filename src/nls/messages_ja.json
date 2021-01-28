@@ -239,7 +239,7 @@
     "dashboard.tableHeader.expression": "",
     "dashboard.tableHeader.key": "キー",
     "dashboard.tableHeader.name": "名前",
-    "dashboard.tableHeader.pipeline": "Pipeline",
+    "dashboard.tableHeader.pipeline": "",
     "dashboard.tableHeader.property": "プロパティ",
     "dashboard.tableHeader.serviceAccount": "",
     "dashboard.tableHeader.serviceAccounts": "ServiceAccount",
