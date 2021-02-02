@@ -1,7 +1,7 @@
 ## Terms list
 
-- style-guide.md：翻訳の基本方針を記載する翻訳スタイルガイド。
-- term.tsv：tsv形式（UTF-8）の用語集。
+- `style-guide.md`：翻訳の基本方針を記載する翻訳スタイルガイド。
+- `term.tsv`：tsv形式（UTF-8）の用語集。
 
 ### How to use 
 
@@ -10,9 +10,9 @@
   - ツールを使わない場合、grepなどをして用語を検索する。
   - ツール（[みんなの自動翻訳](https://mt-auto-minhon-mlt.ucri.jgn-x.jp/)）を使う場合、用語集をカスタムにインポートし、自動翻訳やエディタでカスタムを利用することで翻訳の表記ゆれを減らす。
 
-### Conntact information
+### Contact information
 
 詳細は以下までお問い合わせください
 
-- @koboji
+- @kobaji
 - @Martsings
