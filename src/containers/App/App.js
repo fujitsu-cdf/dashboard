@@ -177,8 +177,8 @@ export /* istanbul ignore next */ class App extends Component {
   }
 
   async loadMessages() {
-    const isSupportedLocal = supportedLocales.includes(this.props.lang);
-    const targetLocale = isSupportedLocal ? this.props.lang : defaultLocale;
+    const isSupportedLocale = supportedLocales.includes(this.props.lang);
+    const targetLocale = isSupportedLocale ? this.props.lang : defaultLocale;
     const { default: messages } = await import(
       /* webpackChunkName: "[request]" */ `../../nls/messages_${targetLocale}.json`
     );
